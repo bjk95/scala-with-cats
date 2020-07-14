@@ -1,0 +1,22 @@
+2020.07.13 17:28:49 INFO  started: Metals version 0.9.1 in workspace '/Users/brad/dev/hello-cats/hello-cats'
+2020.07.13 17:28:49 INFO  time: initialize in 0.28s
+2020.07.13 17:28:54 INFO  no build target: using presentation compiler with only scala-library
+2020.07.13 17:28:55 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Hello.scala
+2020.07.13 17:29:10 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Printbale.scala
+2020.07.13 17:29:12 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Printbale.scala
+2020.07.13 17:29:19 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Printbale.scala
+2020.07.13 17:29:21 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Printbale.scala
+2020.07.13 17:29:24 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Printbale.scala
+2020.07.13 17:29:26 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Printbale.scala
+2020.07.13 17:29:33 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Printbale.scala
+2020.07.13 17:29:46 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Hello.scala
+2020.07.13 17:29:52 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Hello.scala
+Jul 13, 2020 5:29:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 119
+2020.07.13 17:30:00 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Hello.scala
+2020.07.13 17:30:05 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Hello.scala
+2020.07.13 17:30:07 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Hello.scala
+2020.07.13 17:30:12 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Hello.scala
+2020.07.13 17:30:29 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Printbale.scala
+2020.07.13 17:30:31 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Hello.scala
+2020.07.13 17:30:34 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Hello.scala
