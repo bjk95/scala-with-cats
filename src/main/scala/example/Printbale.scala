@@ -35,8 +35,19 @@ object Printable {
     println(format(value))
 }
 
+object PrintableSyntax{
+    implicit class PrintableOps[A](a: A){
+        def format(implicit printable: Printable[A]): String = {
+            printable.format(a)
+        }
+        def print(implicit printable: Printable[A]): Unit = {
+            println(format)
+        }
+    }
+}
 
-final case class Cat(name: String, age: Int, color: String)
+
+    final case class Cat(name: String, age: Int, color: String)
 
 
 
