@@ -20,3 +20,34 @@ WARNING: Unmatched cancel notification for request id 119
 2020.07.13 17:30:29 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Printbale.scala
 2020.07.13 17:30:31 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Hello.scala
 2020.07.13 17:30:34 WARN  no build target for: /Users/brad/dev/hello-cats/hello-cats/src/main/scala/example/Hello.scala
+2020.07.20 10:43:51 INFO  started: Metals version 0.9.2 in workspace '/Users/brad/dev/scala-with-cats' for client vscode.
+2020.07.20 10:43:51 INFO  time: initialize in 0.33s
+2020.07.20 10:44:36 INFO  no build target: using presentation compiler with only scala-library
+2020.07.20 10:44:43 INFO  running '/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/01/jf7qr1p961970_2xj6yhfyym0000gn/T/metals1600149168932903445/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2020.07.20 10:44:47 INFO  [info] Loading global plugins from /Users/brad/.sbt/1.0/plugins
+2020.07.20 10:44:49 INFO  [info] Loading settings for project scala-with-cats-build from metals.sbt ...
+2020.07.20 10:44:49 INFO  [info] Loading project definition from /Users/brad/dev/scala-with-cats/project
+2020.07.20 10:44:50 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+2020.07.20 10:44:52 INFO  [info] Loading settings for project root from build.sbt ...
+2020.07.20 10:44:52 INFO  [info] Set current project to hello-cats (in build file:/Users/brad/dev/scala-with-cats/)
+2020.07.20 10:44:52 INFO  [success] Generated .bloop/root.json
+2020.07.20 10:44:52 INFO  [success] Generated .bloop/root-test.json
+2020.07.20 10:44:52 INFO  [success] Total time: 0 s, completed 20/07/2020 10:44:52 AM
+2020.07.20 10:44:52 INFO  build tool exit: 0
+2020.07.20 10:44:52 INFO  time: ran 'sbt bloopInstall' in 9.34s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/01/jf7qr1p961970_2xj6yhfyym0000gn/T/bsp-launcher9221278152106504034/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading 2 projects from '/Users/brad/dev/scala-with-cats/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/brad/dev/scala-with-cats/.bloop/root.json'
+[0m[32m[D][0m Loading project from '/Users/brad/dev/scala-with-cats/.bloop/root-test.json'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Missing analysis file for project 'root'
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/01/jf7qr1p961970_2xj6yhfyym0000gn/T/bsp-launcher9221278152106504034/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/01/jf7qr1p961970_2xj6yhfyym0000gn/T/bsp-launcher9221278152106504034/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.07.20 10:44:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/brad/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.07.20 10:44:52 INFO  Connected to Build server v1.4.3
+2020.07.20 10:44:55 INFO  time: indexed workspace in 1.98s
+2020.07.20 10:44:55 INFO  skipping build import with status 'Dismissed'
