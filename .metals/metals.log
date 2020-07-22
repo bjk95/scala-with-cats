@@ -2099,3 +2099,1086 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 2020.07.20 17:24:20 INFO  time: indexed workspace in 0.16s
 2020.07.20 17:24:21 INFO  compiling root (1 scala source)
 2020.07.20 17:24:23 INFO  time: compiled root in 1.82s
+2020.07.21 16:34:15 ERROR code navigation does not work for the file '/Users/brad/dev/scala-with-cats/src/main/scala/example/ShowCats.scala' because the SemanticDB file '/Users/brad/dev/scala-with-cats/.bloop/root/bloop-bsp-clients-classes/classes-Metals-oMKzc__uT-yJz8ywV9sFJw==/META-INF/semanticdb/src/main/scala/example/ShowCats.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+2020.07.21 16:36:15 ERROR code navigation does not work for the file '/Users/brad/dev/scala-with-cats/src/main/scala/example/ShowCats.scala' because the build target root is being compiled. Wait until compilation is finished and try again.
+error: Unexpected error forces client exit!
+java.lang.NumberFormatException: For input string: "0
+"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at bloop.shaded.snailgun.protocol.Protocol.$anonfun$processChunkFromServer$1(Protocol.scala:193)
+	at scala.util.Try$.apply(Try.scala:213)
+	at bloop.shaded.snailgun.protocol.Protocol.processChunkFromServer(Protocol.scala:180)
+	at bloop.shaded.snailgun.protocol.Protocol.sendCommand(Protocol.scala:108)
+	at bloop.shaded.snailgun.TcpClient.run(TcpClient.scala:34)
+	at bloop.bloopgun.BloopgunCli.executeCmd$1(Bloopgun.scala:268)
+	at bloop.bloopgun.BloopgunCli.fireCommand(Bloopgun.scala:274)
+	at bloop.bloopgun.BloopgunCli.run(Bloopgun.scala:230)
+	at scala.meta.internal.metals.BloopServers.shutdownServer(BloopServers.scala:48)
+	at scala.meta.internal.metals.MetalsLanguageServer.executeCommand(MetalsLanguageServer.scala:1319)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020.07.21 16:37:23 WARN  There were issues stopping the Bloop server.
+2020.07.21 16:37:23 WARN  If it doesn't start back up you can run the `build-restart` command manually.
+2020.07.21 16:37:23 INFO  disconnected: build server
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+2020.07.21 16:37:25 ERROR timeout: build server 'bloop' during shutdown
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/01/jf7qr1p961970_2xj6yhfyym0000gn/T/bsp-launcher4843655285859957888/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.3...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/Users/brad/dev/scala-with-cats/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/brad/dev/scala-with-cats/.bloop/root-test.json'
+[0m[32m[D][0m Loading project from '/Users/brad/dev/scala-with-cats/.bloop/root.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.2.
+[0m[32m[D][0m   => /Users/brad/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /Users/brad/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.14.1/jline-3.14.1.jar
+[0m[32m[D][0m   => /Users/brad/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.2/scala-compiler-2.13.2.jar
+[0m[32m[D][0m   => /Users/brad/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.2/scala-library-2.13.2.jar
+[0m[32m[D][0m   => /Users/brad/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.2/scala-reflect-2.13.2.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root-test', 'root'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root' from '/Users/brad/dev/scala-with-cats/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/01/jf7qr1p961970_2xj6yhfyym0000gn/T/bsp-launcher4843655285859957888/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/01/jf7qr1p961970_2xj6yhfyym0000gn/T/bsp-launcher4843655285859957888/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.07.21 16:37:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/brad/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.07.21 16:37:27 INFO  time: connected to build server in 2.31s
+2020.07.21 16:37:27 INFO  Connected to Build server v1.4.3
+2020.07.21 16:37:28 INFO  time: indexed workspace in 0.76s
+2020.07.21 16:37:28 INFO  compiling root (3 scala sources)
+2020.07.21 16:37:32 INFO  compiling root-test (1 scala source)
+2020.07.21 16:37:32 INFO  time: compiled root in 4.04s
+2020.07.21 16:37:32 INFO  time: compiled root-test in 0.24s
+Jul 21, 2020 4:39:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4242
+Jul 21, 2020 4:39:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4244
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Hello.scala in Option[<error>]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Hello.scala, 366, 366, 382)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Hello.scala in Option[<error>]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Hello.scala, 366, 366, 375)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Hello.scala in Option[<error>]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Hello.scala, 366, 366, 376)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Hello.scala in Option[Int]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Hello.scala, 366, 366, 377)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/.metals/readonly/cats/Show.scala in cats.Show[A]RangePosition(file:///Users/brad/dev/scala-with-cats/.metals/readonly/cats/Show.scala, 512, 512, 519)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala in example.Printable[example.Cat]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala, 404, 404, 418)
+Jul 21, 2020 4:44:15 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jul 21, 2020 4:44:15 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:2003)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1998)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2058)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1957)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5930)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6098)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5629)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5932)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:451)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1344)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1337)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:668)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:817)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1229)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+Jul 21, 2020 4:44:31 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jul 21, 2020 4:44:31 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:2003)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1998)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2058)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1957)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5930)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6098)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5629)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5932)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:451)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1344)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1337)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:668)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:817)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1229)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+Jul 21, 2020 4:44:48 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jul 21, 2020 4:44:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:2003)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1998)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2058)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1957)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5930)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6098)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5629)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5932)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:451)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1344)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1337)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:668)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:817)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1229)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala in example.Printable[<error>]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala, 429, 429, 448)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala in Option[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala, 486, 486, 495)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala in Option[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala, 486, 486, 495)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala in Option[<error>]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala, 525, 525, 541)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala in Option[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala, 525, 525, 534)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala in Option[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala, 525, 525, 534)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala in Option[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala, 525, 525, 534)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala in example.Printable[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala, 1344, 1344, 1356)
+2020.07.21 16:52:43 INFO  compiling root (3 scala sources)
+2020.07.21 16:52:43 INFO  time: compiled root in 0.52s
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala in example.Printable[String]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala, 131, 131, 148)
+2020.07.21 16:52:51 INFO  compiling root (3 scala sources)
+2020.07.21 16:52:52 INFO  time: compiled root in 1.28s
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala in example.Printable[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/Printbale.scala, 430, 430, 442)
+2020.07.22 15:14:02 INFO  compiling root (1 scala source)
+2020.07.22 15:14:03 INFO  time: compiled root in 1.05s
+2020.07.22 15:14:07 INFO  compiling root (1 scala source)
+2020.07.22 15:14:07 INFO  time: compiled root in 0.5s
+2020.07.22 15:14:07 INFO  compiling root (1 scala source)
+2020.07.22 15:14:07 INFO  time: compiled root in 0.14s
+2020.07.22 15:14:10 INFO  compiling root (1 scala source)
+2020.07.22 15:14:10 INFO  time: compiled root in 53ms
+2020.07.22 15:14:11 INFO  compiling root (1 scala source)
+2020.07.22 15:14:11 INFO  time: compiled root in 0.33s
+2020.07.22 15:14:15 INFO  compiling root (1 scala source)
+2020.07.22 15:14:15 INFO  time: compiled root in 0.28s
+2020.07.22 15:14:21 INFO  compiling root (1 scala source)
+2020.07.22 15:14:21 INFO  time: compiled root in 0.27s
+error: Unexpected error forces client exit!
+java.lang.NumberFormatException: For input string: "0
+"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at bloop.shaded.snailgun.protocol.Protocol.$anonfun$processChunkFromServer$1(Protocol.scala:193)
+	at scala.util.Try$.apply(Try.scala:213)
+	at bloop.shaded.snailgun.protocol.Protocol.processChunkFromServer(Protocol.scala:180)
+	at bloop.shaded.snailgun.protocol.Protocol.sendCommand(Protocol.scala:108)
+	at bloop.shaded.snailgun.TcpClient.run(TcpClient.scala:34)
+	at bloop.bloopgun.BloopgunCli.executeCmd$1(Bloopgun.scala:268)
+	at bloop.bloopgun.BloopgunCli.fireCommand(Bloopgun.scala:274)
+	at bloop.bloopgun.BloopgunCli.run(Bloopgun.scala:230)
+	at scala.meta.internal.metals.BloopServers.shutdownServer(BloopServers.scala:48)
+	at scala.meta.internal.metals.MetalsLanguageServer.executeCommand(MetalsLanguageServer.scala:1319)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020.07.22 15:14:28 WARN  There were issues stopping the Bloop server.
+2020.07.22 15:14:28 WARN  If it doesn't start back up you can run the `build-restart` command manually.
+2020.07.22 15:14:28 INFO  disconnected: build server
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+2020.07.22 15:14:30 ERROR timeout: build server 'bloop' during shutdown
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/01/jf7qr1p961970_2xj6yhfyym0000gn/T/bsp-launcher6037000928199506770/bsp.socket'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.3...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/Users/brad/dev/scala-with-cats/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/brad/dev/scala-with-cats/.bloop/root.json'
+[0m[32m[D][0m Loading project from '/Users/brad/dev/scala-with-cats/.bloop/root-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.2.
+[0m[32m[D][0m   => /Users/brad/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /Users/brad/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.14.1/jline-3.14.1.jar
+[0m[32m[D][0m   => /Users/brad/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.2/scala-compiler-2.13.2.jar
+[0m[32m[D][0m   => /Users/brad/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.2/scala-library-2.13.2.jar
+[0m[32m[D][0m   => /Users/brad/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.2/scala-reflect-2.13.2.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root', 'root-test'
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root' from '/Users/brad/dev/scala-with-cats/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/01/jf7qr1p961970_2xj6yhfyym0000gn/T/bsp-launcher6037000928199506770/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/01/jf7qr1p961970_2xj6yhfyym0000gn/T/bsp-launcher6037000928199506770/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.07.22 15:14:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/brad/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.07.22 15:14:33 INFO  time: connected to build server in 2.4s
+2020.07.22 15:14:33 INFO  Connected to Build server v1.4.3
+2020.07.22 15:14:33 INFO  time: indexed workspace in 0.56s
+2020.07.22 15:14:34 INFO  compiling root-test (1 scala source)
+2020.07.22 15:14:36 INFO  time: compiled root-test in 1.59s
+2020.07.22 15:14:44 INFO  compiling root (1 scala source)
+2020.07.22 15:14:44 INFO  time: compiled root in 0.64s
+2020.07.22 15:14:47 INFO  compiling root (1 scala source)
+2020.07.22 15:14:47 INFO  time: compiled root in 74ms
+2020.07.22 15:14:48 INFO  compiling root (1 scala source)
+2020.07.22 15:14:48 INFO  time: compiled root in 0.65s
+2020.07.22 15:14:50 INFO  compiling root (1 scala source)
+2020.07.22 15:14:50 INFO  time: compiled root in 0.54s
+2020.07.22 15:14:56 INFO  compiling root (1 scala source)
+2020.07.22 15:14:56 INFO  time: compiled root in 0.43s
+2020.07.22 15:14:58 INFO  compiling root (1 scala source)
+2020.07.22 15:14:58 INFO  time: compiled root in 0.41s
+2020.07.22 15:15:00 INFO  compiling root (1 scala source)
+2020.07.22 15:15:00 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2020.07.22 15:15:00 INFO  time: compiled root in 0.42s
+2020.07.22 15:15:03 INFO  compiling root (1 scala source)
+2020.07.22 15:15:03 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2020.07.22 15:15:03 INFO  time: compiled root in 0.41s
+2020.07.22 15:15:04 INFO  compiling root (1 scala source)
+2020.07.22 15:15:04 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2020.07.22 15:15:04 INFO  time: compiled root in 0.43s
+2020.07.22 15:15:07 INFO  compiling root (1 scala source)
+2020.07.22 15:15:07 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2020.07.22 15:15:07 INFO  time: compiled root in 0.43s
+2020.07.22 15:15:09 INFO  compiling root (1 scala source)
+2020.07.22 15:15:09 INFO  time: compiled root in 52ms
+2020.07.22 15:15:11 INFO  compiling root (1 scala source)
+2020.07.22 15:15:11 INFO  time: compiled root in 49ms
+2020.07.22 15:15:12 INFO  compiling root (1 scala source)
+2020.07.22 15:15:12 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2020.07.22 15:15:12 INFO  time: compiled root in 0.43s
+2020.07.22 15:15:15 INFO  compiling root (1 scala source)
+2020.07.22 15:15:15 INFO  time: compiled root in 0.51s
+2020.07.22 15:15:23 INFO  compiling root (1 scala source)
+2020.07.22 15:15:23 INFO  time: compiled root in 0.37s
+2020.07.22 15:15:26 INFO  compiling root (1 scala source)
+2020.07.22 15:15:26 INFO  time: compiled root in 0.45s
+2020.07.22 15:15:27 INFO  compiling root (1 scala source)
+2020.07.22 15:15:27 INFO  time: compiled root in 40ms
+2020.07.22 15:15:29 INFO  compiling root (1 scala source)
+2020.07.22 15:15:29 INFO  time: compiled root in 46ms
+2020.07.22 15:15:34 INFO  compiling root (1 scala source)
+2020.07.22 15:15:34 INFO  time: compiled root in 92ms
+2020.07.22 15:15:34 INFO  compiling root (1 scala source)
+2020.07.22 15:15:34 INFO  time: compiled root in 63ms
+2020.07.22 15:15:36 INFO  compiling root (1 scala source)
+2020.07.22 15:15:36 INFO  time: compiled root in 53ms
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala in example.Semigroup[<error>]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala, 133, 133, 152)
+2020.07.22 15:15:38 INFO  compiling root (1 scala source)
+2020.07.22 15:15:38 INFO  time: compiled root in 0.4s
+2020.07.22 15:15:41 INFO  compiling root (1 scala source)
+2020.07.22 15:15:41 INFO  time: compiled root in 0.38s
+2020.07.22 15:15:44 INFO  compiling root (1 scala source)
+2020.07.22 15:15:44 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details
+2020.07.22 15:15:44 INFO  time: compiled root in 0.38s
+2020.07.22 15:15:46 INFO  compiling root (1 scala source)
+2020.07.22 15:15:46 INFO  time: compiled root in 0.4s
+2020.07.22 15:16:01 INFO  compiling root (1 scala source)
+2020.07.22 15:16:01 INFO  time: compiled root in 43ms
+2020.07.22 15:16:06 INFO  compiling root (1 scala source)
+2020.07.22 15:16:06 INFO  time: compiled root in 0.49s
+2020.07.22 15:16:07 INFO  compiling root (1 scala source)
+2020.07.22 15:16:07 INFO  time: compiled root in 0.41s
+2020.07.22 15:16:11 INFO  compiling root (1 scala source)
+2020.07.22 15:16:11 INFO  time: compiled root in 54ms
+2020.07.22 15:16:11 INFO  compiling root (1 scala source)
+2020.07.22 15:16:11 INFO  time: compiled root in 33ms
+2020.07.22 15:16:12 INFO  compiling root (1 scala source)
+2020.07.22 15:16:12 INFO  time: compiled root in 60ms
+2020.07.22 15:16:15 INFO  compiling root (1 scala source)
+2020.07.22 15:16:15 INFO  time: compiled root in 42ms
+2020.07.22 15:16:16 INFO  compiling root (1 scala source)
+2020.07.22 15:16:16 INFO  time: compiled root in 41ms
+2020.07.22 15:16:20 INFO  compiling root (1 scala source)
+2020.07.22 15:16:20 INFO  time: compiled root in 45ms
+2020.07.22 15:16:20 INFO  compiling root (1 scala source)
+2020.07.22 15:16:20 INFO  time: compiled root in 23ms
+2020.07.22 15:16:24 INFO  compiling root (1 scala source)
+2020.07.22 15:16:24 INFO  time: compiled root in 60ms
+2020.07.22 15:16:24 INFO  compiling root (1 scala source)
+2020.07.22 15:16:24 INFO  time: compiled root in 40ms
+2020.07.22 15:16:27 INFO  compiling root (1 scala source)
+2020.07.22 15:16:27 INFO  time: compiled root in 46ms
+2020.07.22 15:16:33 INFO  compiling root (1 scala source)
+2020.07.22 15:16:33 INFO  time: compiled root in 0.43s
+2020.07.22 15:17:12 INFO  compiling root (1 scala source)
+2020.07.22 15:17:12 INFO  time: compiled root in 0.41s
+Jul 22, 2020 3:17:21 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jul 22, 2020 3:17:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:2003)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1998)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2058)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1957)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5930)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6098)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5629)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5932)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:451)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1344)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1337)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:668)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:817)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1229)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+Jul 22, 2020 3:17:22 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jul 22, 2020 3:17:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:2003)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1998)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2058)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1957)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5930)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6098)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5629)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5932)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:451)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1344)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1337)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:668)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:817)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1229)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+2020.07.22 15:17:23 INFO  compiling root (1 scala source)
+2020.07.22 15:17:23 INFO  time: compiled root in 52ms
+Jul 22, 2020 3:17:23 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jul 22, 2020 3:17:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:2003)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1998)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2058)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1957)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5930)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6098)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5629)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5932)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:451)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1344)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1337)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:668)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:817)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1229)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+2020.07.22 15:17:24 INFO  compiling root (1 scala source)
+2020.07.22 15:17:24 INFO  time: compiled root in 43ms
+2020.07.22 15:17:27 INFO  compiling root (1 scala source)
+2020.07.22 15:17:27 INFO  time: compiled root in 42ms
+2020.07.22 15:17:31 INFO  compiling root (1 scala source)
+2020.07.22 15:17:31 INFO  time: compiled root in 43ms
+2020.07.22 15:17:33 INFO  compiling root (1 scala source)
+2020.07.22 15:17:33 INFO  time: compiled root in 43ms
+2020.07.22 15:17:36 INFO  compiling root (1 scala source)
+2020.07.22 15:17:36 INFO  time: compiled root in 43ms
+2020.07.22 15:18:46 INFO  compiling root (1 scala source)
+2020.07.22 15:18:46 INFO  time: compiled root in 44ms
+2020.07.22 15:18:50 INFO  compiling root (1 scala source)
+2020.07.22 15:18:50 INFO  time: compiled root in 83ms
+2020.07.22 15:18:56 INFO  compiling root (1 scala source)
+2020.07.22 15:18:56 INFO  time: compiled root in 0.17s
+2020.07.22 15:19:05 INFO  compiling root (1 scala source)
+2020.07.22 15:19:05 INFO  time: compiled root in 45ms
+2020.07.22 15:19:06 INFO  compiling root (1 scala source)
+2020.07.22 15:19:06 INFO  time: compiled root in 90ms
+2020.07.22 15:19:09 INFO  compiling root (1 scala source)
+2020.07.22 15:19:09 INFO  time: compiled root in 0.68s
+2020.07.22 15:19:11 INFO  compiling root (1 scala source)
+2020.07.22 15:19:11 INFO  time: compiled root in 0.41s
+2020.07.22 15:19:23 INFO  compiling root (1 scala source)
+2020.07.22 15:19:23 INFO  time: compiled root in 88ms
+2020.07.22 15:19:24 INFO  compiling root (1 scala source)
+2020.07.22 15:19:24 INFO  time: compiled root in 0.39s
+2020.07.22 15:19:26 INFO  compiling root (1 scala source)
+2020.07.22 15:19:26 INFO  time: compiled root in 41ms
+2020.07.22 15:19:29 INFO  compiling root (1 scala source)
+2020.07.22 15:19:29 INFO  time: compiled root in 0.14s
+2020.07.22 15:19:33 INFO  compiling root (1 scala source)
+2020.07.22 15:19:33 INFO  time: compiled root in 0.41s
+2020.07.22 15:19:47 INFO  compiling root (1 scala source)
+2020.07.22 15:19:47 INFO  time: compiled root in 0.5s
+2020.07.22 15:19:56 INFO  compiling root (1 scala source)
+2020.07.22 15:19:56 INFO  time: compiled root in 0.48s
+2020.07.22 15:20:14 INFO  compiling root (1 scala source)
+2020.07.22 15:20:14 INFO  time: compiled root in 0.51s
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala in example.Monoid[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala, 217, 217, 226)
+2020.07.22 15:34:40 INFO  compiling root (1 scala source)
+2020.07.22 15:34:40 INFO  time: compiled root in 0.56s
+2020.07.22 15:34:42 INFO  compiling root (1 scala source)
+2020.07.22 15:34:42 INFO  time: compiled root in 52ms
+Jul 22, 2020 3:34:42 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jul 22, 2020 3:34:42 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:2003)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1998)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2058)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1957)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5930)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6098)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5629)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5932)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:451)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1344)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1337)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:668)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:817)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1229)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+2020.07.22 15:34:44 INFO  compiling root (1 scala source)
+2020.07.22 15:34:44 INFO  time: compiled root in 43ms
+2020.07.22 15:34:48 INFO  compiling root (1 scala source)
+2020.07.22 15:34:48 INFO  time: compiled root in 41ms
+2020.07.22 15:34:51 INFO  compiling root (1 scala source)
+2020.07.22 15:34:51 INFO  time: compiled root in 88ms
+2020.07.22 15:34:51 INFO  compiling root (1 scala source)
+2020.07.22 15:34:51 INFO  time: compiled root in 57ms
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala in example.Monoid[<error>]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala, 513, 513, 529)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala in Set[<error>]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala, 520, 520, 533)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala in Set[<error>]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala, 520, 520, 526)
+2020.07.22 15:35:00 INFO  compiling root (1 scala source)
+2020.07.22 15:35:00 INFO  time: compiled root in 82ms
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala in Set[<error>]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala, 520, 520, 526)
+Jul 22, 2020 3:35:21 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jul 22, 2020 3:35:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:87)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:140)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:137)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.factoryMeth(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:238)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:237)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:57)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:306)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:478)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:477)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:58)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:2003)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1998)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2058)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1957)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5930)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:6098)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$8(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3452)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5629)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5932)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:6020)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:117)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:451)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1344)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1337)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:668)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:817)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1229)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+
+2020.07.22 15:35:22 INFO  compiling root (1 scala source)
+2020.07.22 15:35:22 INFO  time: compiled root in 84ms
+2020.07.22 15:35:25 INFO  compiling root (1 scala source)
+2020.07.22 15:35:25 INFO  time: compiled root in 83ms
+2020.07.22 15:35:30 INFO  compiling root (1 scala source)
+2020.07.22 15:35:30 INFO  time: compiled root in 0.15s
+2020.07.22 15:35:33 INFO  compiling root (1 scala source)
+2020.07.22 15:35:33 INFO  time: compiled root in 41ms
+2020.07.22 15:35:36 INFO  compiling root (1 scala source)
+2020.07.22 15:35:36 INFO  time: compiled root in 0.14s
+2020.07.22 15:35:42 INFO  compiling root (1 scala source)
+2020.07.22 15:35:42 INFO  time: compiled root in 45ms
+2020.07.22 15:35:42 INFO  compiling root (1 scala source)
+2020.07.22 15:35:42 INFO  time: compiled root in 20ms
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala in Set[<error>]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala, 555, 555, 568)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala in Set[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala, 555, 555, 561)
+2020.07.22 15:35:46 INFO  compiling root (1 scala source)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala in example.Monoid[Set[A]]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala, 548, 548, 562)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala in example.Monoid[Set[A]]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/MonoidsAndSemigroups.scala, 548, 548, 562)
+2020.07.22 15:35:46 INFO  time: compiled root in 0.45s
+2020.07.22 15:35:48 INFO  compiling root (1 scala source)
+2020.07.22 15:35:48 INFO  time: compiled root in 0.44s
+2020.07.22 15:35:51 INFO  compiling root (1 scala source)
+2020.07.22 15:35:51 INFO  time: compiled root in 0.43s
+2020.07.22 15:35:54 INFO  compiling root (1 scala source)
+2020.07.22 15:35:54 INFO  time: compiled root in 43ms
+2020.07.22 15:35:56 INFO  compiling root (1 scala source)
+2020.07.22 15:35:56 INFO  time: compiled root in 40ms
+Jul 22, 2020 3:35:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6617
+2020.07.22 15:36:02 INFO  compiling root (1 scala source)
+2020.07.22 15:36:02 INFO  time: compiled root in 50ms
+2020.07.22 15:36:05 INFO  compiling root (1 scala source)
+2020.07.22 15:36:05 INFO  time: compiled root in 0.14s
+2020.07.22 15:36:13 INFO  compiling root (1 scala source)
+2020.07.22 15:36:13 INFO  time: compiled root in 44ms
+2020.07.22 15:36:16 INFO  compiling root (1 scala source)
+2020.07.22 15:36:16 INFO  time: compiled root in 47ms
+2020.07.22 15:36:18 INFO  compiling root (1 scala source)
+2020.07.22 15:36:18 INFO  time: compiled root in 43ms
+2020.07.22 15:36:25 INFO  compiling root (1 scala source)
+2020.07.22 15:36:25 INFO  time: compiled root in 42ms
+2020.07.22 15:36:26 INFO  compiling root (1 scala source)
+2020.07.22 15:36:26 INFO  time: compiled root in 42ms
+2020.07.22 15:36:29 INFO  compiling root (1 scala source)
+2020.07.22 15:36:29 INFO  time: compiled root in 44ms
+2020.07.22 15:36:32 INFO  compiling root (1 scala source)
+2020.07.22 15:36:32 INFO  time: compiled root in 45ms
+2020.07.22 15:36:33 INFO  compiling root (1 scala source)
+2020.07.22 15:36:33 INFO  time: compiled root in 41ms
+2020.07.22 15:36:35 INFO  compiling root (1 scala source)
+2020.07.22 15:36:35 INFO  time: compiled root in 37ms
+2020.07.22 15:37:21 INFO  compiling root (1 scala source)
+2020.07.22 15:37:21 INFO  time: compiled root in 42ms
+2020.07.22 15:37:44 INFO  compiling root (1 scala source)
+2020.07.22 15:37:44 INFO  time: compiled root in 45ms
+2020.07.22 15:37:46 INFO  compiling root (1 scala source)
+2020.07.22 15:37:46 INFO  time: compiled root in 41ms
+2020.07.22 15:37:47 INFO  compiling root (1 scala source)
+2020.07.22 15:37:47 INFO  time: compiled root in 41ms
+2020.07.22 15:37:49 INFO  compiling root (1 scala source)
+2020.07.22 15:37:49 INFO  time: compiled root in 42ms
+2020.07.22 15:37:53 INFO  compiling root (1 scala source)
+2020.07.22 15:37:53 INFO  time: compiled root in 41ms
+2020.07.22 15:38:04 INFO  compiling root (1 scala source)
+2020.07.22 15:38:04 INFO  time: compiled root in 53ms
+2020.07.22 15:38:06 INFO  compiling root (1 scala source)
+2020.07.22 15:38:06 INFO  time: compiled root in 41ms
+2020.07.22 15:38:15 INFO  compiling root (1 scala source)
+2020.07.22 15:38:15 INFO  time: compiled root in 41ms
+2020.07.22 15:38:15 INFO  compiling root (1 scala source)
+2020.07.22 15:38:15 INFO  time: compiled root in 21ms
+2020.07.22 15:38:18 INFO  compiling root (1 scala source)
+2020.07.22 15:38:18 INFO  time: compiled root in 48ms
+2020.07.22 15:38:18 INFO  compiling root (1 scala source)
+2020.07.22 15:38:18 INFO  time: compiled root in 20ms
+2020.07.22 15:38:52 INFO  compiling root (1 scala source)
+2020.07.22 15:38:52 INFO  time: compiled root in 42ms
+2020.07.22 15:38:56 INFO  compiling root (1 scala source)
+2020.07.22 15:38:56 INFO  time: compiled root in 41ms
+2020.07.22 15:44:52 INFO  compiling root (1 scala source)
+2020.07.22 15:44:52 INFO  time: compiled root in 0.6s
+2020.07.22 15:45:28 INFO  compiling root (1 scala source)
+2020.07.22 15:45:28 INFO  time: compiled root in 0.21s
+2020.07.22 15:45:29 INFO  compiling root (1 scala source)
+2020.07.22 15:45:29 INFO  time: compiled root in 0.14s
+2020.07.22 15:45:35 INFO  compiling root (1 scala source)
+2020.07.22 15:45:35 INFO  time: compiled root in 0.24s
+2020.07.22 15:45:36 INFO  compiling root (1 scala source)
+2020.07.22 15:45:36 INFO  time: compiled root in 0.25s
+2020.07.22 15:45:41 INFO  compiling root (1 scala source)
+2020.07.22 15:45:41 INFO  time: compiled root in 56ms
+2020.07.22 15:45:41 INFO  compiling root (1 scala source)
+2020.07.22 15:45:41 INFO  time: compiled root in 24ms
+2020.07.22 15:45:42 INFO  compiling root (1 scala source)
+2020.07.22 15:45:42 INFO  time: compiled root in 40ms
+2020.07.22 15:45:44 INFO  compiling root (1 scala source)
+2020.07.22 15:45:44 INFO  time: compiled root in 42ms
+2020.07.22 15:45:49 INFO  compiling root (1 scala source)
+2020.07.22 15:45:49 INFO  time: compiled root in 0.27s
+2020.07.22 15:45:56 INFO  compiling root (1 scala source)
+2020.07.22 15:45:56 INFO  time: compiled root in 44ms
+2020.07.22 15:46:04 INFO  compiling root (1 scala source)
+2020.07.22 15:46:04 INFO  time: compiled root in 0.61s
+2020.07.22 15:46:09 INFO  compiling root (1 scala source)
+2020.07.22 15:46:09 INFO  time: compiled root in 45ms
+2020.07.22 15:46:09 INFO  compiling root (1 scala source)
+2020.07.22 15:46:09 INFO  time: compiled root in 22ms
+2020.07.22 15:46:11 INFO  compiling root (1 scala source)
+2020.07.22 15:46:11 INFO  time: compiled root in 0.1s
+2020.07.22 15:46:12 INFO  compiling root (1 scala source)
+2020.07.22 15:46:12 INFO  time: compiled root in 0.52s
+2020.07.22 15:46:19 INFO  compiling root (1 scala source)
+2020.07.22 15:46:19 INFO  time: compiled root in 0.48s
+2020.07.22 15:46:22 INFO  compiling root (1 scala source)
+2020.07.22 15:46:22 INFO  time: compiled root in 41ms
+2020.07.22 15:46:22 INFO  compiling root (1 scala source)
+2020.07.22 15:46:22 INFO  time: compiled root in 23ms
+2020.07.22 15:46:30 INFO  compiling root (1 scala source)
+2020.07.22 15:46:30 INFO  time: compiled root in 41ms
+2020.07.22 15:46:36 INFO  compiling root (1 scala source)
+2020.07.22 15:46:36 INFO  time: compiled root in 0.81s
+2020.07.22 15:46:39 INFO  compiling root (1 scala source)
+2020.07.22 15:46:39 INFO  time: compiled root in 0.45s
+2020.07.22 15:46:44 INFO  compiling root (1 scala source)
+2020.07.22 15:46:44 INFO  time: compiled root in 96ms
+2020.07.22 15:46:44 INFO  compiling root (1 scala source)
+2020.07.22 15:46:44 INFO  time: compiled root in 73ms
+2020.07.22 15:46:46 INFO  compiling root (1 scala source)
+2020.07.22 15:46:46 INFO  time: compiled root in 0.46s
+2020.07.22 15:46:49 INFO  compiling root (1 scala source)
+2020.07.22 15:46:49 INFO  time: compiled root in 40ms
+2020.07.22 15:47:32 INFO  compiling root (1 scala source)
+2020.07.22 15:47:32 INFO  time: compiled root in 0.1s
+2020.07.22 15:47:34 INFO  compiling root (1 scala source)
+2020.07.22 15:47:34 INFO  time: compiled root in 91ms
+Jul 22, 2020 3:47:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7240
+2020.07.22 15:47:39 INFO  compiling root (1 scala source)
+2020.07.22 15:47:39 INFO  time: compiled root in 0.14s
+2020.07.22 15:47:51 INFO  compiling root (1 scala source)
+2020.07.22 15:47:51 INFO  time: compiled root in 0.16s
+2020.07.22 15:47:51 INFO  compiling root (1 scala source)
+2020.07.22 15:47:51 INFO  time: compiled root in 0.17s
+2020.07.22 15:47:53 INFO  compiling root (1 scala source)
+2020.07.22 15:47:53 INFO  time: compiled root in 0.16s
+2020.07.22 15:47:58 INFO  compiling root (1 scala source)
+2020.07.22 15:47:58 INFO  time: compiled root in 0.1s
+2020.07.22 15:48:00 INFO  compiling root (1 scala source)
+2020.07.22 15:48:00 INFO  time: compiled root in 98ms
+2020.07.22 15:48:03 INFO  compiling root (1 scala source)
+2020.07.22 15:48:03 INFO  time: compiled root in 0.14s
+2020.07.22 15:48:04 INFO  compiling root (1 scala source)
+2020.07.22 15:48:04 INFO  time: compiled root in 0.14s
+2020.07.22 15:48:06 INFO  compiling root (1 scala source)
+2020.07.22 15:48:06 INFO  time: compiled root in 94ms
+2020.07.22 15:48:11 INFO  compiling root (1 scala source)
+2020.07.22 15:48:11 INFO  time: compiled root in 0.64s
+2020.07.22 15:48:17 INFO  compiling root (1 scala source)
+2020.07.22 15:48:17 INFO  time: compiled root in 0.55s
+2020.07.22 15:49:38 INFO  compiling root (1 scala source)
+2020.07.22 15:49:38 INFO  time: compiled root in 46ms
+2020.07.22 15:49:44 INFO  compiling root (1 scala source)
+2020.07.22 15:49:44 INFO  time: compiled root in 40ms
+2020.07.22 15:49:44 INFO  compiling root (1 scala source)
+2020.07.22 15:49:44 INFO  time: compiled root in 23ms
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in Option[Int]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 207, 207, 218)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in Option[Int]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 207, 207, 218)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in Option[Int]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 207, 207, 218)
+2020.07.22 15:49:45 INFO  compiling root (1 scala source)
+2020.07.22 15:49:45 INFO  time: compiled root in 44ms
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in Option[Int]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 207, 207, 218)
+2020.07.22 15:49:48 INFO  compiling root (1 scala source)
+2020.07.22 15:49:48 INFO  time: compiled root in 41ms
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in Option[Int]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 207, 207, 218)
+2020.07.22 15:50:03 INFO  compiling root (1 scala source)
+2020.07.22 15:50:03 INFO  time: compiled root in 43ms
+2020.07.22 15:50:05 INFO  compiling root (1 scala source)
+2020.07.22 15:50:05 INFO  time: compiled root in 41ms
+2020.07.22 15:50:16 INFO  compiling root (1 scala source)
+2020.07.22 15:50:16 INFO  time: compiled root in 48ms
+2020.07.22 15:50:16 INFO  compiling root (1 scala source)
+2020.07.22 15:50:16 INFO  time: compiled root in 21ms
+2020.07.22 15:50:23 INFO  compiling root (1 scala source)
+2020.07.22 15:50:23 INFO  time: compiled root in 42ms
+2020.07.22 15:50:29 INFO  compiling root (1 scala source)
+2020.07.22 15:50:29 INFO  time: compiled root in 42ms
+2020.07.22 15:50:30 INFO  compiling root (1 scala source)
+2020.07.22 15:50:30 INFO  time: compiled root in 43ms
+2020.07.22 15:50:33 INFO  compiling root (1 scala source)
+2020.07.22 15:50:33 INFO  time: compiled root in 42ms
+2020.07.22 15:50:36 INFO  compiling root (1 scala source)
+2020.07.22 15:50:36 INFO  time: compiled root in 40ms
+2020.07.22 15:50:37 INFO  compiling root (1 scala source)
+2020.07.22 15:50:37 INFO  time: compiled root in 46ms
+2020.07.22 15:50:45 INFO  compiling root (1 scala source)
+2020.07.22 15:50:45 INFO  time: compiled root in 43ms
+2020.07.22 15:50:45 INFO  compiling root (1 scala source)
+2020.07.22 15:50:45 INFO  time: compiled root in 19ms
+2020.07.22 15:50:46 INFO  compiling root (1 scala source)
+2020.07.22 15:50:46 INFO  time: compiled root in 40ms
+2020.07.22 15:51:04 INFO  compiling root (1 scala source)
+2020.07.22 15:51:04 INFO  time: compiled root in 48ms
+2020.07.22 15:51:07 INFO  compiling root (1 scala source)
+2020.07.22 15:51:07 INFO  time: compiled root in 42ms
+2020.07.22 15:51:07 INFO  compiling root (1 scala source)
+2020.07.22 15:51:07 INFO  time: compiled root in 19ms
+2020.07.22 15:51:09 INFO  compiling root (1 scala source)
+2020.07.22 15:51:09 INFO  time: compiled root in 41ms
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in Option[Int]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 207, 207, 218)
+2020.07.22 15:51:25 INFO  compiling root (1 scala source)
+2020.07.22 15:51:25 INFO  time: compiled root in 0.19s
+2020.07.22 15:51:28 INFO  compiling root (1 scala source)
+2020.07.22 15:51:28 INFO  time: compiled root in 0.16s
+2020.07.22 15:51:39 INFO  compiling root (1 scala source)
+2020.07.22 15:51:39 INFO  time: compiled root in 44ms
+2020.07.22 15:51:41 INFO  compiling root (1 scala source)
+2020.07.22 15:51:41 INFO  time: compiled root in 0.69s
+2020.07.22 15:52:08 INFO  compiling root (1 scala source)
+2020.07.22 15:52:08 INFO  time: compiled root in 0.84s
+2020.07.22 15:52:35 INFO  compiling root (1 scala source)
+2020.07.22 15:52:35 INFO  time: compiled root in 0.17s
+2020.07.22 15:52:37 INFO  compiling root (1 scala source)
+2020.07.22 15:52:37 INFO  time: compiled root in 49ms
+2020.07.22 15:52:46 INFO  compiling root (1 scala source)
+2020.07.22 15:52:46 INFO  time: compiled root in 0.67s
+2020.07.22 15:52:47 INFO  compiling root (1 scala source)
+2020.07.22 15:52:47 INFO  time: compiled root in 26ms
+2020.07.22 15:52:54 INFO  compiling root (1 scala source)
+2020.07.22 15:52:54 INFO  time: compiled root in 0.17s
+2020.07.22 15:52:59 INFO  compiling root (1 scala source)
+2020.07.22 15:52:59 INFO  time: compiled root in 0.15s
+2020.07.22 15:53:07 INFO  compiling root (1 scala source)
+2020.07.22 15:53:07 INFO  time: compiled root in 0.15s
+2020.07.22 15:53:10 INFO  compiling root (1 scala source)
+2020.07.22 15:53:10 INFO  time: compiled root in 0.16s
+2020.07.22 15:53:14 INFO  compiling root (1 scala source)
+2020.07.22 15:53:14 INFO  time: compiled root in 38ms
+2020.07.22 15:53:16 INFO  compiling root (1 scala source)
+2020.07.22 15:53:16 INFO  time: compiled root in 0.16s
+2020.07.22 15:53:25 INFO  compiling root (1 scala source)
+2020.07.22 15:53:25 INFO  time: compiled root in 0.17s
+2020.07.22 15:53:28 INFO  compiling root (1 scala source)
+2020.07.22 15:53:28 INFO  time: compiled root in 0.16s
+2020.07.22 15:53:43 INFO  compiling root (1 scala source)
+2020.07.22 15:53:43 INFO  time: compiled root in 0.16s
+2020.07.22 15:54:11 INFO  compiling root (1 scala source)
+2020.07.22 15:54:11 INFO  time: compiled root in 0.71s
+2020.07.22 15:54:14 INFO  compiling root (1 scala source)
+2020.07.22 15:54:14 INFO  time: compiled root in 40ms
+2020.07.22 15:54:16 INFO  compiling root (1 scala source)
+2020.07.22 15:54:16 INFO  time: compiled root in 0.56s
+2020.07.22 15:54:18 INFO  compiling root (1 scala source)
+2020.07.22 15:54:18 INFO  time: compiled root in 39ms
+2020.07.22 15:54:20 INFO  compiling root (1 scala source)
+2020.07.22 15:54:20 INFO  time: compiled root in 0.15s
+2020.07.22 15:54:30 INFO  compiling root (1 scala source)
+2020.07.22 15:54:30 INFO  time: compiled root in 0.15s
+2020.07.22 15:54:31 INFO  compiling root (1 scala source)
+2020.07.22 15:54:31 INFO  time: compiled root in 0.18s
+2020.07.22 15:54:33 INFO  compiling root (1 scala source)
+2020.07.22 15:54:33 INFO  time: compiled root in 0.14s
+Jul 22, 2020 3:54:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7942
+Jul 22, 2020 3:54:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7944
+Jul 22, 2020 3:54:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7943
+Jul 22, 2020 3:54:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7945
+2020.07.22 15:54:38 INFO  compiling root (1 scala source)
+2020.07.22 15:54:38 INFO  time: compiled root in 0.17s
+2020.07.22 15:54:38 INFO  compiling root (1 scala source)
+2020.07.22 15:54:38 INFO  time: compiled root in 0.17s
+2020.07.22 15:54:38 INFO  compiling root (1 scala source)
+2020.07.22 15:54:38 INFO  time: compiled root in 19ms
+2020.07.22 15:54:39 INFO  compiling root (1 scala source)
+2020.07.22 15:54:39 INFO  time: compiled root in 0.16s
+2020.07.22 15:54:40 INFO  compiling root (1 scala source)
+2020.07.22 15:54:40 INFO  time: compiled root in 0.13s
+2020.07.22 15:54:46 INFO  compiling root (1 scala source)
+2020.07.22 15:54:46 INFO  time: compiled root in 0.15s
+2020.07.22 15:54:46 INFO  compiling root (1 scala source)
+2020.07.22 15:54:46 INFO  time: compiled root in 0.13s
+2020.07.22 15:54:48 INFO  compiling root (1 scala source)
+2020.07.22 15:54:48 INFO  time: compiled root in 37ms
+2020.07.22 15:54:50 INFO  compiling root (1 scala source)
+2020.07.22 15:54:50 INFO  time: compiled root in 0.16s
+2020.07.22 15:54:56 INFO  compiling root (1 scala source)
+2020.07.22 15:54:56 INFO  time: compiled root in 0.53s
+2020.07.22 15:54:56 INFO  compiling root (1 scala source)
+2020.07.22 15:54:56 INFO  time: compiled root in 0.18s
+2020.07.22 15:55:01 INFO  compiling root (1 scala source)
+2020.07.22 15:55:01 INFO  time: compiled root in 43ms
+2020.07.22 15:55:05 INFO  compiling root (1 scala source)
+2020.07.22 15:55:05 INFO  time: compiled root in 0.16s
+2020.07.22 15:55:07 INFO  compiling root (1 scala source)
+2020.07.22 15:55:07 INFO  time: compiled root in 0.66s
+2020.07.22 15:55:30 INFO  compiling root (1 scala source)
+2020.07.22 15:55:30 INFO  time: compiled root in 0.63s
+2020.07.22 15:55:37 INFO  compiling root (1 scala source)
+2020.07.22 15:55:37 INFO  time: compiled root in 0.83s
+2020.07.22 15:55:42 INFO  compiling root (1 scala source)
+2020.07.22 15:55:42 INFO  time: compiled root in 0.16s
+2020.07.22 15:55:42 INFO  compiling root (1 scala source)
+2020.07.22 15:55:42 INFO  time: compiled root in 0.14s
+2020.07.22 15:55:44 INFO  compiling root (1 scala source)
+2020.07.22 15:55:44 INFO  time: compiled root in 0.14s
+2020.07.22 15:55:57 INFO  compiling root (1 scala source)
+2020.07.22 15:55:57 INFO  time: compiled root in 38ms
+2020.07.22 15:55:59 INFO  compiling root (1 scala source)
+2020.07.22 15:55:59 INFO  time: compiled root in 40ms
+2020.07.22 15:56:00 INFO  compiling root (1 scala source)
+2020.07.22 15:56:00 INFO  time: compiled root in 0.15s
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in List[<error>]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 551, 551, 565)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in List[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 551, 551, 558)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in List[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 551, 551, 558)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in List[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 551, 551, 558)
+2020.07.22 15:56:12 INFO  compiling root (1 scala source)
+2020.07.22 15:56:12 INFO  time: compiled root in 0.15s
+2020.07.22 15:56:16 INFO  compiling root (1 scala source)
+2020.07.22 15:56:16 INFO  time: compiled root in 0.15s
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in cats.Monoid[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 556, 556, 565)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in cats.Monoid[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 556, 556, 565)
+2020.07.22 15:56:34 INFO  compiling root (1 scala source)
+2020.07.22 15:56:34 INFO  time: compiled root in 43ms
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in cats.Monoid[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 556, 556, 565)
+2020.07.22 15:56:35 INFO  compiling root (1 scala source)
+2020.07.22 15:56:35 INFO  time: compiled root in 0.15s
+2020.07.22 15:56:38 INFO  compiling root (1 scala source)
+2020.07.22 15:56:38 INFO  time: compiled root in 0.15s
+2020.07.22 15:57:10 INFO  compiling root (1 scala source)
+2020.07.22 15:57:10 INFO  time: compiled root in 37ms
+2020.07.22 15:57:12 INFO  compiling root (1 scala source)
+2020.07.22 15:57:12 INFO  time: compiled root in 37ms
+2020.07.22 15:57:17 INFO  compiling root (1 scala source)
+2020.07.22 15:57:17 INFO  time: compiled root in 36ms
+2020.07.22 15:57:17 INFO  compiling root (1 scala source)
+2020.07.22 15:57:17 INFO  time: compiled root in 20ms
+2020.07.22 15:57:28 INFO  compiling root (1 scala source)
+2020.07.22 15:57:28 INFO  time: compiled root in 0.16s
+2020.07.22 15:57:28 INFO  compiling root (1 scala source)
+2020.07.22 15:57:28 INFO  time: compiled root in 0.13s
+2020.07.22 15:57:35 INFO  compiling root (1 scala source)
+2020.07.22 15:57:35 INFO  time: compiled root in 0.15s
+2020.07.22 15:57:37 INFO  compiling root (1 scala source)
+2020.07.22 15:57:37 INFO  time: compiled root in 37ms
+2020.07.22 15:57:42 INFO  compiling root (1 scala source)
+2020.07.22 15:57:42 INFO  time: compiled root in 0.15s
+2020.07.22 15:57:42 INFO  compiling root (1 scala source)
+2020.07.22 15:57:42 INFO  time: compiled root in 0.13s
+Jul 22, 2020 3:57:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8428
+Jul 22, 2020 3:57:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8429
+Jul 22, 2020 3:57:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8431
+Jul 22, 2020 3:57:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8432
+Jul 22, 2020 3:57:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8434
+2020.07.22 15:57:46 INFO  compiling root (1 scala source)
+2020.07.22 15:57:46 INFO  time: compiled root in 0.16s
+2020.07.22 15:57:48 INFO  compiling root (1 scala source)
+2020.07.22 15:57:48 INFO  time: compiled root in 0.15s
+2020.07.22 15:57:51 INFO  compiling root (1 scala source)
+2020.07.22 15:57:51 INFO  time: compiled root in 0.15s
+2020.07.22 15:57:52 INFO  compiling root (1 scala source)
+2020.07.22 15:57:52 INFO  time: compiled root in 0.15s
+2020.07.22 15:57:55 INFO  compiling root (1 scala source)
+2020.07.22 15:57:55 INFO  time: compiled root in 0.15s
+2020.07.22 15:57:56 INFO  compiling root (1 scala source)
+2020.07.22 15:57:56 INFO  time: compiled root in 0.15s
+2020.07.22 15:58:03 INFO  compiling root (1 scala source)
+2020.07.22 15:58:03 INFO  time: compiled root in 0.15s
+2020.07.22 15:58:05 INFO  compiling root (1 scala source)
+2020.07.22 15:58:05 INFO  time: compiled root in 0.17s
+2020.07.22 15:58:08 INFO  compiling root (1 scala source)
+2020.07.22 15:58:08 INFO  time: compiled root in 0.15s
+2020.07.22 15:58:11 INFO  compiling root (1 scala source)
+2020.07.22 15:58:11 INFO  time: compiled root in 0.15s
+2020.07.22 15:58:13 INFO  compiling root (1 scala source)
+2020.07.22 15:58:13 INFO  time: compiled root in 0.15s
+2020.07.22 15:58:22 INFO  compiling root (1 scala source)
+2020.07.22 15:58:22 INFO  time: compiled root in 0.16s
+2020.07.22 15:58:24 INFO  compiling root (1 scala source)
+2020.07.22 15:58:24 INFO  time: compiled root in 0.16s
+2020.07.22 15:58:31 INFO  compiling root (1 scala source)
+2020.07.22 15:58:31 INFO  time: compiled root in 0.15s
+2020.07.22 15:58:39 INFO  compiling root (1 scala source)
+2020.07.22 15:58:39 INFO  time: compiled root in 39ms
+2020.07.22 15:58:39 INFO  compiling root (1 scala source)
+2020.07.22 15:58:39 INFO  time: compiled root in 20ms
+2020.07.22 15:58:41 INFO  compiling root (1 scala source)
+2020.07.22 15:58:41 INFO  time: compiled root in 0.16s
+2020.07.22 15:58:45 INFO  compiling root (1 scala source)
+2020.07.22 15:58:45 INFO  time: compiled root in 0.71s
+2020.07.22 15:58:49 INFO  compiling root (1 scala source)
+2020.07.22 15:58:49 INFO  time: compiled root in 0.63s
+2020.07.22 16:00:07 INFO  compiling root (1 scala source)
+2020.07.22 16:00:07 INFO  time: compiled root in 0.64s
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in List[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 551, 551, 558)
+something's wrong: no file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala in List[A]RangePosition(file:///Users/brad/dev/scala-with-cats/src/main/scala/example/CatsMonoid.scala, 551, 551, 558)
+2020.07.22 16:00:42 INFO  compiling root (1 scala source)
+2020.07.22 16:00:42 INFO  time: compiled root in 41ms
+2020.07.22 16:00:48 INFO  compiling root (1 scala source)
+2020.07.22 16:00:48 INFO  time: compiled root in 0.15s
+2020.07.22 16:00:51 INFO  compiling root (1 scala source)
+2020.07.22 16:00:51 INFO  time: compiled root in 0.64s
+2020.07.22 16:01:31 INFO  compiling root (1 scala source)
+2020.07.22 16:01:31 INFO  time: compiled root in 0.14s
+2020.07.22 16:02:13 INFO  compiling root (1 scala source)
+2020.07.22 16:02:13 INFO  time: compiled root in 0.66s

@@ -1,6 +1,6 @@
 package example
 
-trait Printable[A]{
+trait Printable[-A]{
     def format(a: A): String
 }
 
@@ -13,6 +13,11 @@ object PrintableInstances {
     implicit val intFormatter: Printable[Int] = 
     new Printable[Int] {
         def format(value: Int): String = value.toString
+    }
+
+    implicit def optionFormatter[A](implicit printable: Printable[A]): Printable[Option[A]] = 
+    new Printable[Option[A]] {
+        def format(value: Option[A]): String = value.fold("")(a => printable.format(a))
     }
 
     implicit val catFormatter: Printable[Cat]  = 

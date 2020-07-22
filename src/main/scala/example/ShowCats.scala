@@ -1,11 +1,11 @@
 package example
 
 import cats._
-import cats.instances.all._
+// import cats.instances.all._
 import cats.implicits._
-import cats.syntax.all._
+// import cats.syntax.all._
 
-import cats.Eq
+// import cats.Eq
 
 
 final case class AnotherCat(name: String, age: Int, color: String)
