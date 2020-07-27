@@ -1,7 +1,16 @@
 package example
 
 trait Printable[-A]{
+
+    self =>
     def format(a: A): String
+
+   def contramap[B](f: B => A): Printable[B] = {
+        new Printable[B] {
+            def format(b: B): String = self.format(f(b))
+        }
+    }
+
 }
 
 object PrintableInstances {
@@ -14,6 +23,10 @@ object PrintableInstances {
     new Printable[Int] {
         def format(value: Int): String = value.toString
     }
+
+    implicit val byteFormatter: Printable[Byte] =
+        intFormatter.contramap(_.toInt)
+    
 
     implicit def optionFormatter[A](implicit printable: Printable[A]): Printable[Option[A]] = 
     new Printable[Option[A]] {
@@ -30,6 +43,14 @@ object PrintableInstances {
             s"$name is a $age year-old $color cat"
         }
     }
+
+
+ 
+
+
+
+
+
 }
 
 
@@ -48,6 +69,8 @@ object PrintableSyntax{
         def print(implicit printable: Printable[A]): Unit = {
             println(format)
         }
+
+
     }
 }
 
